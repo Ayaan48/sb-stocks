@@ -1,0 +1,23 @@
+.admin-stat-card {
+  text-align: center;
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: .6rem;
+  padding: 1.8rem 1rem;
+  transition: transform .2s, box-shadow .2s;
+}
+.admin-stat-card:hover { transform: translateY(-3px); box-shadow: 0 6px 20px rgba(0,0,0,.1); }
+
+.admin-stat-icon {
+  width: 52px;
+  height: 52px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.4rem;
+}
+.admin-stat-value { font-size: 2rem; font-weight: 800; color: var(--text); }
+.admin-stat-label { font-size: .85rem; color: var(--text-muted); font-weight: 600; }

@@ -1,0 +1,79 @@
+.back-btn { margin-bottom: 1rem; }
+
+.stock-header { margin-bottom: 1.5rem; }
+.stock-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 1.2rem;
+}
+.stock-info h2   { font-size: 1.6rem; font-weight: 800; }
+.stock-info p    { color: var(--text-muted); font-size: .95rem; }
+.exch-tag {
+  display: inline-block;
+  background: #f4f5f7;
+  color: var(--text-muted);
+  font-size: .75rem;
+  padding: .2rem .5rem;
+  border-radius: 4px;
+  margin-top: .3rem;
+}
+.main-price  { font-size: 2rem; font-weight: 800; }
+.price-change {
+  display: flex;
+  align-items: center;
+  gap: .3rem;
+  font-size: .95rem;
+  font-weight: 600;
+  margin-top: .2rem;
+}
+.stock-meta { margin-top: 1rem; }
+.stock-meta div { display: flex; flex-direction: column; gap: .2rem; }
+.stock-meta label { font-size: .75rem; color: var(--text-muted); margin: 0; font-weight: 600; }
+.stock-meta strong { font-size: .95rem; }
+
+.stock-body {
+  display: grid;
+  grid-template-columns: 1fr 300px;
+  gap: 1.2rem;
+  align-items: start;
+}
+
+.period-tabs { display: flex; gap: .4rem; margin-bottom: 1rem; }
+.period-tab {
+  padding: .3rem .7rem;
+  border: 1px solid var(--border);
+  border-radius: 5px;
+  background: #fff;
+  font-size: .82rem;
+  font-weight: 600;
+  cursor: pointer;
+  color: var(--text-muted);
+  transition: all .2s;
+}
+.period-tab.active {
+  background: var(--primary);
+  border-color: var(--primary);
+  color: #fff;
+}
+
+/* Trade panel */
+.trade-panel h3 { margin-bottom: .25rem; }
+.balance-info   { font-size: .85rem; color: var(--text-muted); margin-bottom: 1rem; }
+.trade-tabs     { display: grid; grid-template-columns: 1fr 1fr; gap: 0; margin-bottom: 1rem; border: 1px solid var(--border); border-radius: 6px; overflow: hidden; }
+.trade-tab {
+  padding: .6rem;
+  border: none;
+  background: #f4f5f7;
+  font-weight: 700;
+  cursor: pointer;
+  font-size: .9rem;
+  transition: background .2s, color .2s;
+}
+.trade-tab.active-buy  { background: var(--success); color: #fff; }
+.trade-tab.active-sell { background: var(--danger);  color: #fff; }
+
+@media (max-width: 900px) {
+  .stock-body { grid-template-columns: 1fr; }
+  .stock-info { flex-direction: column; gap: .8rem; }
+}
